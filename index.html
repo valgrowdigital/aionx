@@ -3,76 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Growth Proposal — AIONX</title>
+<title>Revised Growth Proposal — AIONX</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#09090f;
-  --bg-2:#0f0f1a;
-  --bg-3:#15151f;
-  --border:#1e1e2e;
-  --border-2:#2a2a3e;
-  --gold:#c9a84c;
-  --gold-2:#f0d080;
-  --gold-bg:rgba(201,168,76,.08);
-  --gold-border:rgba(201,168,76,.25);
-  --text:#e8e8f0;
-  --text-2:#9090a8;
-  --text-3:#5a5a70;
-  --red-bg:rgba(220,60,60,.08);
-  --red-border:rgba(220,60,60,.2);
-  --red-text:#e07070;
-  --green-bg:rgba(60,200,120,.07);
-  --green-border:rgba(60,200,120,.2);
-  --green-text:#60c880;
+  --bg:#09090f;--bg-2:#0f0f1a;--bg-3:#15151f;
+  --border:#1e1e2e;--border-2:#2a2a3e;
+  --gold:#c9a84c;--gold-2:#f0d080;
+  --gold-bg:rgba(201,168,76,.08);--gold-border:rgba(201,168,76,.25);
+  --text:#e8e8f0;--text-2:#9090a8;--text-3:#5a5a70;
+  --red-bg:rgba(220,60,60,.08);--red-border:rgba(220,60,60,.2);--red-text:#e07070;
+  --green-bg:rgba(60,200,120,.07);--green-border:rgba(60,200,120,.2);--green-text:#60c880;
+  --blue-bg:rgba(80,120,220,.08);--blue-border:rgba(80,120,220,.25);--blue-text:#7090e0;
 }
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
-.wrap{max-width:780px;margin:0 auto;padding:0 24px 80px}
+.wrap{max-width:800px;margin:0 auto;padding:0 24px 80px}
 
 /* HEADER */
 .header{background:var(--bg-2);border-bottom:1px solid var(--border);padding:56px 40px 52px;position:relative;overflow:hidden}
 .header::before{content:'';position:absolute;top:-120px;right:-120px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.07) 0%,transparent 70%)}
 .header::after{content:'';position:absolute;bottom:-80px;left:-80px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(100,80,200,.05) 0%,transparent 70%)}
-.header-inner{max-width:780px;margin:0 auto;position:relative;z-index:1}
-.header-from{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3);margin-bottom:10px;font-family:'Syne',sans-serif}
-.header h1{font-family:'Syne',sans-serif;font-size:clamp(28px,5vw,44px);font-weight:700;line-height:1.1;color:var(--text);margin-bottom:16px}
+.h-inner{max-width:800px;margin:0 auto;position:relative;z-index:1}
+.h-eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3);margin-bottom:10px;font-family:'Syne',sans-serif}
+.header h1{font-family:'Syne',sans-serif;font-size:clamp(26px,5vw,42px);font-weight:700;line-height:1.1;color:var(--text);margin-bottom:16px}
 .header h1 span{color:var(--gold)}
-.header-sub{font-size:14px;color:var(--text-2);max-width:480px;line-height:1.8}
-.header-date{margin-top:28px;font-size:11px;color:var(--text-3);letter-spacing:.05em}
+.h-sub{font-size:14px;color:var(--text-2);max-width:500px;line-height:1.8}
+.h-date{margin-top:28px;font-size:11px;color:var(--text-3);letter-spacing:.05em}
+.h-revised{display:inline-block;background:rgba(201,168,76,.12);border:1px solid var(--gold-border);color:var(--gold);font-size:11px;font-weight:600;font-family:'Syne',sans-serif;letter-spacing:.07em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:16px}
 
 /* SECTION */
 .section{margin-top:52px}
-.section-label{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3);font-family:'Syne',sans-serif;margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.slabel{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3);font-family:'Syne',sans-serif;margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--border)}
 
 /* CARDS */
-.card{background:var(--bg-2);border:1px solid var(--border);border-radius:12px;padding:26px 28px}
+.card{background:var(--bg-2);border:1px solid var(--border);border-radius:12px;padding:24px 28px}
 .card p{color:var(--text-2);font-size:14px;line-height:1.85;margin-bottom:14px}
 .card p:last-child{margin-bottom:0}
 .card strong{color:var(--text);font-weight:500}
+
+/* RESPONSE CARD */
+.response-card{background:var(--bg-2);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:10px}
+.rc-head{padding:14px 20px;background:var(--bg-3);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.rc-icon{font-size:16px}
+.rc-question{font-size:13px;font-weight:600;color:var(--text);font-family:'Syne',sans-serif}
+.rc-body{padding:16px 20px}
+.rc-body p{font-size:13px;color:var(--text-2);line-height:1.7;margin-bottom:8px}
+.rc-body p:last-child{margin-bottom:0}
+.rc-body strong{color:var(--text);font-weight:500}
+.rc-tag{display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;margin-right:5px;margin-top:4px}
+.rt-green{background:var(--green-bg);color:var(--green-text);border:1px solid var(--green-border)}
+.rt-gold{background:var(--gold-bg);color:var(--gold);border:1px solid var(--gold-border)}
+.rt-red{background:var(--red-bg);color:var(--red-text);border:1px solid var(--red-border)}
+.rt-blue{background:var(--blue-bg);color:var(--blue-text);border:1px solid var(--blue-border)}
+
+/* MODULES */
+.modules{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:560px){.modules{grid-template-columns:1fr}}
+.mod-card{background:var(--bg-2);border:1px solid var(--border);border-radius:12px;padding:20px 18px}
+.mod-card.active{border-color:var(--gold-border);background:var(--gold-bg)}
+.mod-card.soon{border-color:var(--border-2);opacity:.7}
+.mod-phase{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-family:'Syne',sans-serif;margin-bottom:8px}
+.mod-card.active .mod-phase{color:var(--gold)}
+.mod-card.soon .mod-phase{color:var(--text-3)}
+.mod-name{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--text);margin-bottom:6px}
+.mod-desc{font-size:12px;color:var(--text-2);line-height:1.55}
+.mod-status{display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:20px;margin-top:10px}
+.ms-live{background:var(--green-bg);color:var(--green-text);border:1px solid var(--green-border)}
+.ms-soon{background:var(--bg-3);color:var(--text-3);border:1px solid var(--border)}
+
+/* SCOPE BOX */
+.scope-box{background:var(--bg-2);border:1px solid var(--gold-border);border-radius:12px;padding:24px 28px}
+.scope-box h3{font-family:'Syne',sans-serif;font-size:16px;font-weight:600;color:var(--gold-2);margin-bottom:8px}
+.scope-box p{font-size:13px;color:var(--text-2);line-height:1.75;margin-bottom:16px}
+.scope-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:500px){.scope-fields{grid-template-columns:1fr}}
+.scope-field{background:var(--bg-3);border:1px solid var(--border-2);border-radius:8px;padding:14px 16px}
+.sf-label{font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--text-3);font-family:'Syne',sans-serif;margin-bottom:6px}
+.sf-val{font-size:13px;color:var(--text);font-weight:500}
+.sf-hint{font-size:11px;color:var(--text-3);margin-top:3px;line-height:1.4}
 
 /* PAIN POINTS */
 .pains{display:flex;flex-direction:column;gap:10px}
 .pain{display:flex;gap:14px;align-items:flex-start;background:var(--bg-2);border:1px solid var(--border);border-radius:10px;padding:16px 18px}
 .pain-icon{width:34px;height:34px;border-radius:8px;background:var(--red-bg);border:1px solid var(--red-border);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
-.pain-title{font-size:14px;font-weight:500;color:var(--text);margin-bottom:3px;font-family:'Syne',sans-serif}
+.pain-title{font-size:14px;font-weight:600;color:var(--text);margin-bottom:3px;font-family:'Syne',sans-serif}
 .pain-desc{font-size:13px;color:var(--text-2);line-height:1.6}
 
-/* OPPORTUNITY */
-.opp-box{background:var(--gold-bg);border:1px solid var(--gold-border);border-radius:14px;padding:28px 32px}
-.opp-box h3{font-family:'Syne',sans-serif;font-size:20px;font-weight:600;color:var(--gold-2);margin-bottom:10px}
-.opp-box p{font-size:14px;color:var(--text-2);line-height:1.8}
-.opp-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
-@media(max-width:500px){.opp-stats{grid-template-columns:1fr}}
-.opp-stat{background:rgba(0,0,0,.3);border:1px solid var(--border-2);border-radius:9px;padding:16px;text-align:center}
-.opp-stat-val{font-family:'Syne',sans-serif;font-size:26px;font-weight:700;color:var(--gold);line-height:1}
-.opp-stat-label{font-size:12px;color:var(--text-3);margin-top:5px;line-height:1.4}
-
-/* WHAT YOU ACHIEVE */
+/* ACHIEVE */
 .achieve-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 @media(max-width:540px){.achieve-grid{grid-template-columns:1fr}}
-.achieve-card{background:var(--bg-2);border:1px solid var(--border);border-radius:12px;padding:20px 20px 22px}
+.achieve-card{background:var(--bg-2);border:1px solid var(--border);border-radius:12px;padding:20px}
 .achieve-card.gold{border-color:var(--gold-border);background:var(--gold-bg)}
 .achieve-icon{font-size:20px;margin-bottom:10px}
 .achieve-title{font-family:'Syne',sans-serif;font-weight:600;font-size:14px;color:var(--text);margin-bottom:6px}
@@ -84,16 +106,26 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-
 .wf-row{display:flex;gap:18px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--border)}
 .wf-row:last-child{border-bottom:none}
 .wf-num{width:30px;height:30px;border-radius:50%;background:var(--gold-bg);border:1px solid var(--gold-border);color:var(--gold);font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;font-family:'Syne',sans-serif}
-.wf-title{font-weight:500;font-size:14px;color:var(--text);margin-bottom:5px;font-family:'Syne',sans-serif}
+.wf-title{font-weight:600;font-size:14px;color:var(--text);margin-bottom:5px;font-family:'Syne',sans-serif}
 .wf-desc{font-size:13px;color:var(--text-2);line-height:1.65}
 .wf-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
 .wf-tag{font-size:11px;color:var(--text-3);background:var(--bg-3);border:1px solid var(--border);border-radius:20px;padding:3px 10px}
 
-/* MESSAGE BOX */
+/* MSG BOX */
 .msg-box{background:var(--bg-3);border:1px solid var(--border-2);border-radius:10px;padding:20px 22px;margin-top:14px}
 .msg-label{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:12px;font-family:'Syne',sans-serif}
 .msg-text{font-size:13px;color:var(--text-2);line-height:1.8;font-style:italic;border-left:2px solid var(--gold-border);padding-left:14px}
 .msg-note{font-size:12px;color:var(--text-3);margin-top:12px}
+
+/* ADD-ONS */
+.addons{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:500px){.addons{grid-template-columns:1fr}}
+.addon-card{background:var(--bg-2);border:1px solid var(--border-2);border-radius:10px;padding:18px 20px}
+.addon-card.featured{border-color:var(--gold-border)}
+.addon-name{font-family:'Syne',sans-serif;font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px}
+.addon-price{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--gold);margin-bottom:8px}
+.addon-price span{font-size:13px;font-family:'Inter',sans-serif;color:var(--text-3);font-weight:400}
+.addon-desc{font-size:12px;color:var(--text-2);line-height:1.6}
 
 /* PACKAGES */
 .packages{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
@@ -102,23 +134,35 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-
 .pkg.featured{border-color:var(--gold-border);background:var(--gold-bg)}
 .pkg-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--gold);color:#080700;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:4px 12px;border-radius:20px;white-space:nowrap;font-family:'Syne',sans-serif}
 .pkg-name{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:8px;font-family:'Syne',sans-serif}
-.pkg-price{font-family:'Syne',sans-serif;font-size:30px;font-weight:700;color:var(--text);line-height:1;margin-bottom:2px}
+.pkg-price-row{display:flex;align-items:baseline;gap:8px;margin-bottom:2px}
+.pkg-price{font-family:'Syne',sans-serif;font-size:28px;font-weight:700;color:var(--text);line-height:1}
 .pkg.featured .pkg-price{color:var(--gold-2)}
-.pkg-price span{font-size:13px;font-family:'Inter',sans-serif;color:var(--text-3);font-weight:400}
-.pkg-tagline{font-size:12px;color:var(--text-3);margin-bottom:18px;margin-top:6px;line-height:1.5}
-.pkg-divider{border:none;border-top:1px solid var(--border);margin-bottom:14px}
-.pkg-section-head{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);margin:12px 0 5px;font-family:'Syne',sans-serif}
-.pkg-features{list-style:none}
-.pkg-features li{font-size:12px;color:var(--text-2);padding:5px 0;display:flex;gap:7px;align-items:flex-start;line-height:1.4;border-bottom:1px solid rgba(255,255,255,.04)}
-.pkg-features li:last-child{border-bottom:none}
-.pkg-features li::before{content:'✓';color:var(--green-text);font-weight:700;font-size:11px;flex-shrink:0;margin-top:1px}
-.pkg-features li.na{color:var(--text-3)}
-.pkg-features li.na::before{content:'—';color:var(--border-2)}
-.pkg-features li.highlight{color:var(--gold-2)}
-.pkg-features li.highlight::before{content:'✓';color:var(--gold)}
+.pkg-price span{font-size:12px;font-family:'Inter',sans-serif;color:var(--text-3);font-weight:400}
+.pkg-was{font-size:12px;color:var(--text-3);text-decoration:line-through}
+.pkg-saving{font-size:11px;font-weight:600;color:var(--green-text);background:var(--green-bg);border:1px solid var(--green-border);padding:2px 7px;border-radius:20px;margin-left:4px}
+.pkg-tagline{font-size:12px;color:var(--text-3);margin-bottom:16px;margin-top:6px;line-height:1.5}
+.pkg-divider{border:none;border-top:1px solid var(--border);margin-bottom:12px}
+.pkg-sh{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);margin:12px 0 5px;font-family:'Syne',sans-serif}
+.pf{list-style:none}
+.pf li{font-size:12px;color:var(--text-2);padding:5px 0;display:flex;gap:7px;align-items:flex-start;line-height:1.4;border-bottom:1px solid rgba(255,255,255,.04)}
+.pf li:last-child{border-bottom:none}
+.pf li::before{content:'✓';color:var(--green-text);font-weight:700;font-size:11px;flex-shrink:0;margin-top:1px}
+.pf li.na{color:var(--text-3)}
+.pf li.na::before{content:'—';color:var(--border-2)}
+.pf li.hl{color:var(--gold-2)}
+.pf li.hl::before{content:'✓';color:var(--gold)}
 
-/* CAPACITY BADGE */
-.capacity-badge{display:inline-block;background:rgba(201,168,76,.12);border:1px solid var(--gold-border);color:var(--gold);font-size:10px;font-weight:600;font-family:'Syne',sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:20px;margin-bottom:12px}
+/* DISCOUNT BOX */
+.discount-box{background:var(--gold-bg);border:1px solid var(--gold-border);border-radius:12px;padding:24px 28px}
+.discount-box h3{font-family:'Syne',sans-serif;font-size:17px;font-weight:600;color:var(--gold-2);margin-bottom:10px}
+.discount-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+@media(max-width:500px){.discount-grid{grid-template-columns:1fr}}
+.dc{background:rgba(0,0,0,.3);border:1px solid var(--border-2);border-radius:8px;padding:14px;text-align:center}
+.dc-name{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--text-3);font-family:'Syne',sans-serif;margin-bottom:6px}
+.dc-original{font-size:12px;color:var(--text-3);text-decoration:line-through;margin-bottom:2px}
+.dc-price{font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--gold);line-height:1}
+.dc-mo{font-size:11px;color:var(--text-3)}
+.dc-save{font-size:11px;font-weight:600;color:var(--green-text);margin-top:5px}
 
 /* WHY VALGROW */
 .why-row{display:flex;gap:14px;align-items:flex-start;background:var(--bg-2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:10px}
@@ -132,151 +176,246 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-
 .cta-box h2{font-family:'Syne',sans-serif;font-size:26px;font-weight:700;color:var(--text);margin-bottom:10px;position:relative}
 .cta-box h2 span{color:var(--gold)}
 .cta-box p{font-size:14px;color:var(--text-2);max-width:400px;margin:0 auto 28px;line-height:1.75;position:relative}
-.cta-btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#08070a;font-weight:600;font-size:14px;padding:15px 32px;border-radius:8px;text-decoration:none;letter-spacing:.02em;font-family:'Syne',sans-serif;transition:background .2s,transform .1s;position:relative}
+.cta-btn{display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:#08070a;font-weight:600;font-size:14px;padding:15px 32px;border-radius:8px;text-decoration:none;font-family:'Syne',sans-serif;position:relative;transition:background .2s,transform .1s}
 .cta-btn:hover{background:var(--gold-2);transform:translateY(-1px)}
-.cta-btn svg{width:18px;height:18px;fill:#08070a;flex-shrink:0}
+.cta-btn svg{width:17px;height:17px;fill:#08070a;flex-shrink:0}
 .cta-sub{margin-top:14px;font-size:12px;color:var(--text-3);position:relative}
 
-/* FOOTER */
 .footer{margin-top:48px;text-align:center;font-size:12px;color:var(--text-3);padding-top:24px;border-top:1px solid var(--border)}
 .footer strong{color:var(--text-2)}
+.note{font-size:12px;color:var(--text-3);margin-top:10px}
 </style>
 </head>
 <body>
 
 <div class="header">
-  <div class="header-inner">
-    <div class="header-from">Prepared by ValGrow Labs · Growth Intelligence · Dubai</div>
-    <h1>AIONX has a great product.<br><span>Nobody knows it exists yet.</span></h1>
-    <p class="header-sub">A focused growth proposal — covering LinkedIn presence, daily outreach to HR decision-makers, community engagement, and search visibility. Built specifically for an AI hiring platform targeting the UAE market.</p>
-    <div class="header-date">April 2026 · Confidential</div>
+  <div class="h-inner">
+    <div class="h-revised">Revised Proposal — April 2026</div>
+    <div class="h-eyebrow">Prepared by ValGrow Labs · Growth Intelligence · Dubai</div>
+    <h1>AIONX is bigger than one module.<br><span>Let's build it that way.</span></h1>
+    <p class="h-sub">This revised proposal addresses your feedback directly — global scope, all three modules acknowledged, add-ons included, and optimized pricing for our partnership.</p>
+    <div class="h-date">Confidential · Prepared for AIONX</div>
   </div>
 </div>
 
 <div class="wrap">
 
-  <!-- INTRO -->
+  <!-- RESPONSES TO FEEDBACK -->
   <div class="section">
-    <div class="card">
-      <p>AIONX automates the entire hiring pipeline — from job creation and CV shortlisting to candidate outreaching and AI interviews. It solves a real, painful problem that every HR manager and recruiter in the UAE deals with daily.</p>
-      <p>The challenge right now is <strong>distribution</strong>. The right people — HR Managers, Talent Acquisition leads, Founders — don't know AIONX exists. They're not finding it on Google. They're not seeing it on LinkedIn. And nobody is reaching out to them directly.</p>
-      <p>That's exactly what we fix.</p>
+    <div class="slabel">Your feedback — addressed point by point</div>
+
+    <div class="response-card">
+      <div class="rc-head">
+        <div class="rc-icon">🏗️</div>
+        <div class="rc-question">AIONX has 3 modules — AI Hiring, AI GRC Automation, AI Tendering Automation</div>
+      </div>
+      <div class="rc-body">
+        <p>Acknowledged and reflected in this proposal. We structure the engagement in <strong>phases aligned to your module readiness</strong> — Phase 1 launches with AI Hiring (live now), and as GRC Automation and AI Tendering launch, we activate dedicated campaigns for each. You get one growth partner across your entire platform, not a different agency every time a new module goes live.</p>
+        <span class="rc-tag rt-green">Phase 1 — AI Hiring (now)</span>
+        <span class="rc-tag rt-blue">Phase 2 — AI GRC (on launch)</span>
+        <span class="rc-tag rt-blue">Phase 3 — AI Tendering (on launch)</span>
+      </div>
+    </div>
+
+    <div class="response-card">
+      <div class="rc-head">
+        <div class="rc-icon">🌍</div>
+        <div class="rc-question">Target is global, not limited to UAE scope</div>
+      </div>
+      <div class="rc-body">
+        <p>Noted. The strategy in this proposal is <strong>market-agnostic by design</strong> — outreach, SEO, and content are built around the target market you define before each campaign phase. We do not assume UAE unless you specify it.</p>
+        <p><strong>Before each phase begins, you confirm:</strong> which module to promote, which markets or regions to target, and which industries or buyer personas to prioritise. This ensures every dirham of effort goes toward the right audience — not a generic market.</p>
+        <span class="rc-tag rt-gold">Target market defined per phase</span>
+        <span class="rc-tag rt-gold">GCC · Europe · Asia-Pacific · Global</span>
+      </div>
+    </div>
+
+    <div class="response-card">
+      <div class="rc-head">
+        <div class="rc-icon">🎬</div>
+        <div class="rc-question">Short video for YouTube was missing from the proposal</div>
+      </div>
+      <div class="rc-body">
+        <p>Included as an <strong>add-on service</strong>. We produce a short AI-generated animated explainer video (under 30 seconds) showing the value of AIONX's AI hiring solution — designed for YouTube and LinkedIn. Additional charges apply and are detailed in the add-ons section below.</p>
+        <span class="rc-tag rt-green">Available as add-on</span>
+        <span class="rc-tag rt-gold">AI-generated animated format</span>
+        <span class="rc-tag rt-gold">Under 30 seconds</span>
+      </div>
+    </div>
+
+    <div class="response-card">
+      <div class="rc-head">
+        <div class="rc-icon">📊</div>
+        <div class="rc-question">Do you build a sales slide deck? Is it included?</div>
+      </div>
+      <div class="rc-body">
+        <p>Yes — we can build a <strong>professional sales deck</strong> for AIONX, designed for use in prospect meetings and MS Teams demos. This is offered as an add-on (not included in the monthly packages) and is detailed in the add-ons section below. The deck covers the platform overview, AI Hiring workflow, key benefits, before/after comparison, and a clear call to action.</p>
+        <span class="rc-tag rt-green">Available as add-on</span>
+      </div>
+    </div>
+
+    <div class="response-card">
+      <div class="rc-head">
+        <div class="rc-icon">👤</div>
+        <div class="rc-question">Can you provide a sales representative to present on MS Teams?</div>
+      </div>
+      <div class="rc-body">
+        <p>This falls outside our scope as a digital growth agency. Our strength is building the pipeline, the content, and the visibility that <strong>brings the right people to the meeting</strong> — the presentation and close is where your team takes over. We'd recommend hiring a dedicated sales resource or working with a sales outsourcing partner for live demos.</p>
+        <p>What we can do: equip your team with a strong deck, a clear messaging framework, and objection-handling notes so every demo lands well.</p>
+        <span class="rc-tag rt-red">Outside our scope</span>
+        <span class="rc-tag rt-gold">We provide the deck + messaging</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- THREE MODULES -->
+  <div class="section">
+    <div class="slabel">The AIONX platform — phased growth plan</div>
+    <div class="modules">
+      <div class="mod-card active">
+        <div class="mod-phase">Phase 1 — Active now</div>
+        <div class="mod-name">AI Hiring</div>
+        <div class="mod-desc">Automates CV shortlisting, candidate outreach, and AI interviews. End-to-end hiring pipeline without manual effort.</div>
+        <div class="mod-status ms-live">Live — full campaign</div>
+      </div>
+      <div class="mod-card soon">
+        <div class="mod-phase">Phase 2 — On launch</div>
+        <div class="mod-name">AI GRC Automation</div>
+        <div class="mod-desc">Governance, risk, and compliance automation. Campaign activates when module is ready for market.</div>
+        <div class="mod-status ms-soon">Pending launch</div>
+      </div>
+      <div class="mod-card soon">
+        <div class="mod-phase">Phase 3 — On launch</div>
+        <div class="mod-name">AI Tendering Automation</div>
+        <div class="mod-desc">Automated tendering and procurement workflows. Campaign activates when module is ready for market.</div>
+        <div class="mod-status ms-soon">Pending launch</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCOPE INPUT -->
+  <div class="section">
+    <div class="slabel">How scope works — defined before every phase</div>
+    <div class="scope-box">
+      <h3>Before each phase begins, you confirm four things.</h3>
+      <p>We don't assume your target market, industry, or buyer. You define it — we execute it precisely. This is how global campaigns stay focused and budgets don't get wasted.</p>
+      <div class="scope-fields">
+        <div class="scope-field">
+          <div class="sf-label">Module</div>
+          <div class="sf-val">e.g. AI Hiring</div>
+          <div class="sf-hint">Which product are we promoting this phase?</div>
+        </div>
+        <div class="scope-field">
+          <div class="sf-label">Target Markets</div>
+          <div class="sf-val">e.g. UAE, KSA, UK, Singapore</div>
+          <div class="sf-hint">Which countries or regions?</div>
+        </div>
+        <div class="scope-field">
+          <div class="sf-label">Target Industries</div>
+          <div class="sf-val">e.g. Fintech, Logistics, Healthcare</div>
+          <div class="sf-hint">Which sectors have the most demand?</div>
+        </div>
+        <div class="scope-field">
+          <div class="sf-label">Buyer Persona</div>
+          <div class="sf-val">e.g. HR Manager, COO, Founder</div>
+          <div class="sf-hint">Who makes the buying decision?</div>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- PAIN POINTS -->
   <div class="section">
-    <div class="section-label">The pain your buyers feel every day</div>
+    <div class="slabel">The pain your buyers feel — globally</div>
     <div class="pains">
       <div class="pain">
         <div class="pain-icon">⏳</div>
         <div>
           <div class="pain-title">CV screening eats hours every week</div>
-          <div class="pain-desc">The average recruiter in the UAE spends 23 hours per hire just reviewing CVs. Most of those candidates aren't even qualified. It's the most manual, repetitive part of the job — and AIONX eliminates it.</div>
+          <div class="pain-desc">The average recruiter globally spends 23 hours per hire just reviewing CVs. Most candidates aren't qualified. It's the most manual, repetitive part of hiring — AIONX eliminates it entirely.</div>
         </div>
       </div>
       <div class="pain">
         <div class="pain-icon">📧</div>
         <div>
           <div class="pain-title">Candidate outreach is slow and inconsistent</div>
-          <div class="pain-desc">Reaching out to shortlisted candidates, following up, scheduling — it all falls on the recruiter. Response rates are low, timelines drag, and good candidates go elsewhere while waiting. AIONX automates this entirely.</div>
+          <div class="pain-desc">Reaching shortlisted candidates, following up, scheduling interviews — all manual. Response rates drop, good candidates go elsewhere, and hiring timelines stretch. AIONX automates this end-to-end.</div>
         </div>
       </div>
       <div class="pain">
         <div class="pain-icon">💸</div>
         <div>
           <div class="pain-title">Hiring costs are too high for the output</div>
-          <div class="pain-desc">Between job board fees, recruiter time, and extended vacancies, the average cost-per-hire in the UAE is AED 8,000–15,000. Companies are paying for a broken process and not seeing results.</div>
+          <div class="pain-desc">Between job board fees, recruiter time, and extended vacancies, cost-per-hire is significant across every market. Companies are paying for a broken process. AIONX changes the economics.</div>
         </div>
       </div>
       <div class="pain">
         <div class="pain-icon">🔍</div>
         <div>
-          <div class="pain-title">No one is finding AIONX when they search for a solution</div>
-          <div class="pain-desc">When an HR manager searches "AI recruitment software Dubai" or "automate hiring process UAE," AIONX doesn't appear. The buyers are actively looking — they just can't find you.</div>
+          <div class="pain-title">Decision-makers don't know AIONX exists</div>
+          <div class="pain-desc">HR Managers and Founders in your target markets are actively searching for AI hiring solutions — they just haven't found AIONX yet. That's a distribution problem, not a product problem. It's what we fix.</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- OPPORTUNITY -->
+  <!-- ACHIEVE -->
   <div class="section">
-    <div class="opp-box">
-      <h3>The timing is right. The buyers are there.</h3>
-      <p>The UAE HR tech market is growing fast. Every mid-size company hiring more than 10 people a year is a potential AIONX customer — and LinkedIn alone has over 180,000 HR professionals in the UAE. They post about these problems daily. They're reachable. They just haven't heard from AIONX yet.</p>
-      <div class="opp-stats">
-        <div class="opp-stat">
-          <div class="opp-stat-val">180K+</div>
-          <div class="opp-stat-label">HR professionals on LinkedIn UAE</div>
-        </div>
-        <div class="opp-stat">
-          <div class="opp-stat-val">23 hrs</div>
-          <div class="opp-stat-label">Avg. recruiter spends per hire on screening</div>
-        </div>
-        <div class="opp-stat">
-          <div class="opp-stat-val">600+</div>
-          <div class="opp-stat-label">Qualified prospects reachable per month</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WHAT YOU WILL ACHIEVE -->
-  <div class="section">
-    <div class="section-label">What AIONX will achieve with ValGrow</div>
+    <div class="slabel">What AIONX will achieve with ValGrow</div>
     <div class="achieve-grid">
       <div class="achieve-card gold">
         <div class="achieve-icon">🎯</div>
-        <div class="achieve-title">A direct pipeline of demo requests</div>
-        <div class="achieve-desc">Daily outreach to HR Managers, Talent Acquisition leads, Recruiters, and Founders — personalised messages that speak to their exact pain. Warm conversations, not cold spam.</div>
+        <div class="achieve-title">Direct pipeline of demo requests</div>
+        <div class="achieve-desc">Daily outreach to HR decision-makers in your target markets — personalised messages that speak to their exact pain. Warm conversations, not cold spam.</div>
+      </div>
+      <div class="achieve-card gold">
+        <div class="achieve-icon">🌍</div>
+        <div class="achieve-title">Global reach, market by market</div>
+        <div class="achieve-desc">As each module launches and each new market is targeted, the campaign scales with it. One agency, one consistent voice, across every market AIONX enters.</div>
       </div>
       <div class="achieve-card gold">
         <div class="achieve-icon">📣</div>
-        <div class="achieve-title">A LinkedIn presence that builds trust before the first call</div>
-        <div class="achieve-desc">When a prospect receives your outreach and checks your LinkedIn, they see a credible company with relevant content. That's the difference between being ignored and getting a reply.</div>
+        <div class="achieve-title">LinkedIn presence that builds trust</div>
+        <div class="achieve-desc">When a prospect gets your outreach and checks your LinkedIn, they see a credible platform with relevant content. That's what turns a message into a reply.</div>
       </div>
       <div class="achieve-card gold">
         <div class="achieve-icon">🔎</div>
-        <div class="achieve-title">Inbound leads from Google search</div>
-        <div class="achieve-desc">When HR managers search for AI hiring solutions in Dubai, AIONX appears. SEO builds a consistent stream of inbound interest that runs 24/7 without ongoing ad spend.</div>
+        <div class="achieve-title">Inbound leads from search</div>
+        <div class="achieve-desc">When HR managers search for AI hiring solutions in your target markets, AIONX appears. SEO builds a consistent inbound stream that runs 24/7 without ad spend.</div>
       </div>
-      <div class="achieve-card gold">
+      <div class="achieve-card">
         <div class="achieve-icon">💬</div>
-        <div class="achieve-title">Visibility in HR conversations already happening</div>
-        <div class="achieve-desc">Strategic comments on posts by HR influencers keep AIONX visible to thousands of potential buyers — without spending a single dirham on ads.</div>
+        <div class="achieve-title">Visibility in HR conversations</div>
+        <div class="achieve-desc">Strategic comments on HR influencer posts keep AIONX visible to thousands of potential buyers already in the right mindset — with zero ad spend.</div>
       </div>
       <div class="achieve-card">
         <div class="achieve-icon">📈</div>
-        <div class="achieve-title">Authority in the AI hiring space</div>
-        <div class="achieve-desc">Consistent content positioning AIONX as the expert on AI hiring in the UAE — making every other touchpoint more effective over time.</div>
-      </div>
-      <div class="achieve-card">
-        <div class="achieve-icon">🔄</div>
-        <div class="achieve-title">Results that compound every month</div>
-        <div class="achieve-desc">Outreach builds warm connections. Content builds audience. SEO builds inbound. Each channel reinforces the others — the longer we run, the more efficient the pipeline becomes.</div>
+        <div class="achieve-title">A platform ready to scale</div>
+        <div class="achieve-desc">Phase 1 builds the foundation. When GRC and Tendering launch, the audience, authority, and channels are already in place — and growth accelerates faster with each new module.</div>
       </div>
     </div>
   </div>
 
   <!-- WHAT WE DO -->
   <div class="section">
-    <div class="section-label">Exactly what we do</div>
+    <div class="slabel">Exactly what we do — Phase 1 (AI Hiring)</div>
     <div class="workflow">
 
       <div class="wf-row">
         <div class="wf-num">1</div>
         <div>
           <div class="wf-title">Build and optimise the AIONX LinkedIn company page</div>
-          <div class="wf-desc">We set up a professional company profile — clear headline, compelling about section, banner, and complete product information. This is the first thing a prospect checks when they receive outreach. It needs to convert curiosity into credibility instantly.</div>
-          <div class="wf-tags"><span class="wf-tag">Company profile setup</span><span class="wf-tag">Banner & headline</span><span class="wf-tag">Product showcase</span><span class="wf-tag">Keyword optimisation</span></div>
+          <div class="wf-desc">Professional company profile — clear headline covering all three modules, AI Hiring as the lead product, compelling about section, banner, and complete product showcase. First thing every prospect checks after receiving outreach.</div>
+          <div class="wf-tags"><span class="wf-tag">Full profile setup</span><span class="wf-tag">All 3 modules showcased</span><span class="wf-tag">Banner & headline</span><span class="wf-tag">Keyword optimised</span></div>
         </div>
       </div>
 
       <div class="wf-row">
         <div class="wf-num">2</div>
         <div>
-          <div class="wf-title">Weekly LinkedIn content — 4 posts per week</div>
-          <div class="wf-desc">We write and publish content around the exact topics your buyers care about. Each post builds the audience and warms up prospects before outreach ever reaches them — so when they get your message, they already know who you are.</div>
+          <div class="wf-title">Weekly LinkedIn content — market-specific, 4–5 posts per week</div>
+          <div class="wf-desc">We write and publish content around the exact topics your buyers care about in their market. Content adapts to the target region and industry — not generic posts that could apply to any company.</div>
           <div class="wf-tags"><span class="wf-tag">Manual hiring is broken</span><span class="wf-tag">Before vs After AI</span><span class="wf-tag">How to reduce hiring cost</span><span class="wf-tag">Stop reviewing CVs manually</span><span class="wf-tag">AI sourcing explained</span></div>
         </div>
       </div>
@@ -284,14 +423,14 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-
       <div class="wf-row">
         <div class="wf-num">3</div>
         <div>
-          <div class="wf-title">Daily LinkedIn outreach to HR decision-makers</div>
-          <div class="wf-desc">We identify and reach out to HR Managers, Talent Acquisition Specialists, Recruiters, and Founders across UAE companies every day. Each message is personalised to their role and company — not a generic blast. The goal is one thing: booking a demo. Higher-tier plans run simultaneous outreach from multiple dedicated channels, reaching significantly more decision-makers each month.</div>
+          <div class="wf-title">Daily LinkedIn outreach — targeting defined buyer personas</div>
+          <div class="wf-desc">We reach out to HR Managers, Talent Acquisition leads, Recruiters, and Founders in your confirmed target markets every day. Each message personalised to their role, company, and market. Higher-tier plans run multiple simultaneous outreach channels for significantly more reach per month.</div>
           <div class="msg-box">
             <div class="msg-label">Sample outreach message</div>
             <div class="msg-text">Hi [Name], I noticed you handle hiring at [Company] — wanted to reach out directly.<br><br>We work with companies to automate the parts of recruitment that eat up most of your time: CV shortlisting, candidate outreach, and initial screening — all handled by AI.<br><br>Most teams cut their time-to-hire by 60%+ within the first month.<br><br>Would a 15-minute demo make sense this week?<br><br>[AIONX website]</div>
-            <div class="msg-note">Personalised per recipient · Targets HR Managers, TA Leads, Recruiters & Founders · Follow-up sent on day 4 if no reply</div>
+            <div class="msg-note">Personalised per recipient · Targets defined buyer personas · Follow-up sent on day 4 if no reply · Message variants A/B tested</div>
           </div>
-          <div class="wf-tags" style="margin-top:12px"><span class="wf-tag">HR Managers</span><span class="wf-tag">Talent Acquisition</span><span class="wf-tag">Recruiters</span><span class="wf-tag">Founders</span><span class="wf-tag">A/B tested messages</span></div>
+          <div class="wf-tags" style="margin-top:12px"><span class="wf-tag">HR Managers</span><span class="wf-tag">TA Leads</span><span class="wf-tag">Recruiters</span><span class="wf-tag">Founders / COOs</span><span class="wf-tag">Market-specific targeting</span></div>
         </div>
       </div>
 
@@ -299,157 +438,157 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-
         <div class="wf-num">4</div>
         <div>
           <div class="wf-title">Comment strategy on HR influencer posts</div>
-          <div class="wf-desc">We identify the top HR and recruitment voices on LinkedIn UAE and post thoughtful, value-adding comments on their content daily. This puts AIONX in front of thousands of engaged HR professionals who are already in the right mindset — without any ad spend.</div>
-          <div class="wf-tags"><span class="wf-tag">HR influencer targeting</span><span class="wf-tag">Daily comments</span><span class="wf-tag">Organic visibility</span><span class="wf-tag">Brand awareness</span></div>
+          <div class="wf-desc">We identify top HR voices on LinkedIn in your target markets and post value-adding comments on their content daily. This puts AIONX in front of thousands of engaged HR professionals already in the right mindset — zero ad spend.</div>
+          <div class="wf-tags"><span class="wf-tag">Market-specific influencers</span><span class="wf-tag">Daily comments</span><span class="wf-tag">Organic brand visibility</span></div>
         </div>
       </div>
 
       <div class="wf-row">
         <div class="wf-num">5</div>
         <div>
-          <div class="wf-title">SEO — get found when HR managers search for a solution</div>
-          <div class="wf-desc">We optimise the AIONX website for the exact searches your buyers use — "AI recruitment software Dubai," "automate hiring UAE," "AI CV screening tool." We also build content — blog articles and FAQs — that rank on Google and bring in inbound leads on autopilot.</div>
-          <div class="wf-tags"><span class="wf-tag">AI recruitment software Dubai</span><span class="wf-tag">Automate hiring UAE</span><span class="wf-tag">CV screening AI</span><span class="wf-tag">Blog & FAQ content</span><span class="wf-tag">Technical SEO fixes</span></div>
+          <div class="wf-title">SEO — get found when decision-makers search for a solution</div>
+          <div class="wf-desc">We optimise the AIONX website for searches like "AI recruitment software," "automate hiring process," and "AI CV screening tool" — targeted to your confirmed markets. We also build blog and FAQ content that ranks and brings inbound leads on autopilot.</div>
+          <div class="wf-tags"><span class="wf-tag">AI recruitment software</span><span class="wf-tag">Automate hiring</span><span class="wf-tag">CV screening AI tool</span><span class="wf-tag">Market-localised keywords</span></div>
         </div>
       </div>
 
     </div>
   </div>
 
+  <!-- ADD-ONS -->
+  <div class="section">
+    <div class="slabel">Add-on services</div>
+    <div class="addons">
+      <div class="addon-card featured">
+        <div class="addon-name">🎬 AI Explainer Video</div>
+        <div class="addon-price">AED 800 <span>one-time</span></div>
+        <div class="addon-desc">Short AI-animated explainer video (under 30 seconds) showing the AIONX AI Hiring workflow and value proposition. Optimised for YouTube and LinkedIn. Script, voiceover, and animation included. Delivered within 7 days.</div>
+      </div>
+      <div class="addon-card featured">
+        <div class="addon-name">📊 Sales Slide Deck</div>
+        <div class="addon-price">AED 1,200 <span>one-time</span></div>
+        <div class="addon-desc">Professional sales presentation deck designed for prospect meetings and MS Teams demos. Covers platform overview, AI Hiring workflow, before/after comparison, key benefits, and a clear CTA. Delivered in PowerPoint and PDF. Includes one round of revisions.</div>
+      </div>
+    </div>
+    <p class="note">Add-ons are one-time charges and can be requested at any time during the engagement. Pricing is per module — a separate deck or video for GRC or Tendering is available at the same rate when those modules launch.</p>
+  </div>
+
   <!-- PACKAGES -->
   <div class="section">
-    <div class="section-label">Choose your plan</div>
+    <div class="slabel">Monthly packages — Phase 1 (AI Hiring)</div>
     <div class="packages">
 
-      <!-- STARTER -->
       <div class="pkg">
         <div class="pkg-name">Starter</div>
-        <div class="pkg-price">AED 2,500 <span>/ mo</span></div>
-        <div class="pkg-tagline">LinkedIn presence, content, and daily outreach — single channel.</div>
+        <div class="pkg-price-row">
+          <div class="pkg-price">AED 2,300 <span>/ mo</span></div>
+        </div>
+        <div class="pkg-tagline">LinkedIn presence + content + single-channel outreach. Build the foundation.</div>
         <hr class="pkg-divider">
-        <div class="capacity-badge">1 outreach channel</div>
-
-        <div class="pkg-section-head">LinkedIn Page</div>
-        <ul class="pkg-features">
+        <div class="pkg-sh">LinkedIn</div>
+        <ul class="pf">
           <li>Full company page setup</li>
           <li>4 posts per week</li>
           <li>Content calendar</li>
         </ul>
-
-        <div class="pkg-section-head">Daily Outreach</div>
-        <ul class="pkg-features">
+        <div class="pkg-sh">Outreach</div>
+        <ul class="pf">
+          <li>1 outreach channel</li>
           <li>20–30 decision-makers / day</li>
           <li>Personalised per role & company</li>
           <li>Day-4 follow-up sequence</li>
-          <li>HR Managers, TA, Recruiters, Founders</li>
         </ul>
-
-        <div class="pkg-section-head">Community</div>
-        <ul class="pkg-features">
+        <div class="pkg-sh">Community</div>
+        <ul class="pf">
           <li>5 HR influencer comments / day</li>
         </ul>
-
-        <div class="pkg-section-head">SEO</div>
-        <ul class="pkg-features">
-          <li class="na">Keyword optimisation</li>
+        <div class="pkg-sh">SEO</div>
+        <ul class="pf">
+          <li>Basic keyword setup</li>
           <li class="na">Blog content</li>
         </ul>
-
-        <div class="pkg-section-head">Reporting</div>
-        <ul class="pkg-features">
+        <div class="pkg-sh">Reporting</div>
+        <ul class="pf">
           <li>Monthly report</li>
           <li>Reply & demo tracking</li>
         </ul>
       </div>
 
-      <!-- GROWTH (FEATURED) -->
       <div class="pkg featured">
         <div class="pkg-badge">Recommended</div>
         <div class="pkg-name">Growth</div>
-        <div class="pkg-price">AED 4,500 <span>/ mo</span></div>
-        <div class="pkg-tagline">Double the outreach reach, SEO content, and full comment strategy.</div>
+        <div class="pkg-price-row">
+          <div class="pkg-price">AED 4,300 <span>/ mo</span></div>
+        </div>
+        <div class="pkg-tagline">Double outreach reach, full SEO, and complete comment strategy.</div>
         <hr class="pkg-divider">
-        <div class="capacity-badge">2 outreach channels</div>
-
-        <div class="pkg-section-head">LinkedIn Page</div>
-        <ul class="pkg-features">
+        <div class="pkg-sh">LinkedIn</div>
+        <ul class="pf">
           <li>Full company page setup</li>
           <li>5 posts per week</li>
           <li>Content calendar</li>
         </ul>
-
-        <div class="pkg-section-head">Daily Outreach</div>
-        <ul class="pkg-features">
-          <li class="highlight">40–60 decision-makers / day</li>
-          <li class="highlight">2x outreach channels simultaneously</li>
+        <div class="pkg-sh">Outreach</div>
+        <ul class="pf">
+          <li class="hl">2 outreach channels simultaneously</li>
+          <li class="hl">40–60 decision-makers / day</li>
           <li>Personalised per role & company</li>
           <li>A/B tested message variants</li>
           <li>Multi-step follow-up sequence</li>
-          <li>HR Managers, TA, Recruiters, Founders</li>
         </ul>
-
-        <div class="pkg-section-head">Community</div>
-        <ul class="pkg-features">
+        <div class="pkg-sh">Community</div>
+        <ul class="pf">
           <li>10 HR influencer comments / day</li>
         </ul>
-
-        <div class="pkg-section-head">SEO</div>
-        <ul class="pkg-features">
-          <li class="highlight">5 targeted keywords optimised</li>
-          <li class="highlight">3 SEO blog posts / month</li>
+        <div class="pkg-sh">SEO</div>
+        <ul class="pf">
+          <li class="hl">5 target keywords optimised</li>
+          <li class="hl">3 SEO blog posts / month</li>
           <li>Technical SEO fixes</li>
-          <li>Google ranking setup</li>
         </ul>
-
-        <div class="pkg-section-head">Reporting</div>
-        <ul class="pkg-features">
+        <div class="pkg-sh">Reporting</div>
+        <ul class="pf">
           <li>Bi-weekly report</li>
           <li>Full reply & demo tracking</li>
           <li>Priority WhatsApp support</li>
         </ul>
       </div>
 
-      <!-- DOMINATE -->
       <div class="pkg">
         <div class="pkg-name">Dominate</div>
-        <div class="pkg-price">AED 7,500 <span>/ mo</span></div>
-        <div class="pkg-tagline">Maximum reach, full SEO authority, and dedicated account management.</div>
+        <div class="pkg-price-row">
+          <div class="pkg-price">AED 7,300 <span>/ mo</span></div>
+        </div>
+        <div class="pkg-tagline">Maximum reach, full SEO authority, and dedicated management.</div>
         <hr class="pkg-divider">
-        <div class="capacity-badge">3 outreach channels</div>
-
-        <div class="pkg-section-head">LinkedIn Page</div>
-        <ul class="pkg-features">
+        <div class="pkg-sh">LinkedIn</div>
+        <ul class="pf">
           <li>Full company page setup</li>
           <li>Daily content (7 posts/week)</li>
           <li>Content calendar</li>
         </ul>
-
-        <div class="pkg-section-head">Daily Outreach</div>
-        <ul class="pkg-features">
+        <div class="pkg-sh">Outreach</div>
+        <ul class="pf">
+          <li>3 outreach channels simultaneously</li>
           <li>60–90 decision-makers / day</li>
-          <li>3x outreach channels simultaneously</li>
           <li>Personalised per role & company</li>
           <li>Multi-variant message testing</li>
           <li>Full multi-step follow-up sequences</li>
-          <li>HR Managers, TA, Recruiters, Founders</li>
         </ul>
-
-        <div class="pkg-section-head">Community</div>
-        <ul class="pkg-features">
+        <div class="pkg-sh">Community</div>
+        <ul class="pf">
           <li>15 HR influencer comments / day</li>
         </ul>
-
-        <div class="pkg-section-head">SEO</div>
-        <ul class="pkg-features">
-          <li>15 targeted keywords optimised</li>
+        <div class="pkg-sh">SEO</div>
+        <ul class="pf">
+          <li>15 target keywords optimised</li>
           <li>6 SEO blog posts / month</li>
           <li>Backlink outreach</li>
           <li>AI search citations</li>
           <li>Full technical SEO audit</li>
         </ul>
-
-        <div class="pkg-section-head">Reporting</div>
-        <ul class="pkg-features">
+        <div class="pkg-sh">Reporting</div>
+        <ul class="pf">
           <li>Weekly report</li>
           <li>Full pipeline tracking</li>
           <li>Dedicated account manager</li>
@@ -458,31 +597,33 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-
       </div>
 
     </div>
-    <p style="font-size:12px;color:var(--text-3);margin-top:12px;text-align:center;">All plans billed monthly · Annual billing saves 20% · Pricing can be customised</p>
+    <p class="note" style="text-align:center;margin-top:12px">Packages above are for Phase 1 (AI Hiring). Pricing for Phase 2 and Phase 3 will be proposed when each module is ready to launch. Scope confirmed before each phase begins.</p>
   </div>
+
+
 
   <!-- WHY VALGROW -->
   <div class="section">
-    <div class="section-label">Why ValGrow</div>
+    <div class="slabel">Why ValGrow for AIONX long term</div>
     <div class="why-row">
-      <div class="why-icon">🎯</div>
+      <div class="why-icon">🔁</div>
       <div>
-        <div class="why-title">We focus on pipeline, not vanity metrics</div>
-        <div class="why-desc">Likes and impressions don't pay salaries. Every action we take — outreach, content, SEO — is measured against one outcome: demo bookings and qualified conversations for AIONX.</div>
+        <div class="why-title">One partner across your entire platform lifecycle</div>
+        <div class="why-desc">As AI Hiring gains traction and GRC and Tendering launch, we activate the next phase immediately — no briefing a new agency, no starting from zero. The audience, authority, and channels built in Phase 1 accelerate every phase that follows.</div>
       </div>
     </div>
     <div class="why-row">
-      <div class="why-icon">🇦🇪</div>
+      <div class="why-icon">🎯</div>
       <div>
-        <div class="why-title">We know the UAE B2B landscape</div>
-        <div class="why-desc">We understand how HR decisions get made in Dubai, which companies are scaling and actively hiring, and how to position a tech product to a non-technical buyer. This is not a copy-paste playbook.</div>
+        <div class="why-title">We focus on demos booked, not impressions</div>
+        <div class="why-desc">Every action — outreach, content, SEO — is measured against one outcome: qualified conversations and demo bookings for AIONX. Not vanity metrics.</div>
       </div>
     </div>
     <div class="why-row">
       <div class="why-icon">📊</div>
       <div>
-        <div class="why-title">Transparent reporting — you see everything</div>
-        <div class="why-desc">You'll know exactly how many people were reached, how many replied, what content performed, and how the pipeline is progressing. Full visibility, no black box.</div>
+        <div class="why-title">Full transparency — you see everything</div>
+        <div class="why-desc">You'll know how many people were reached, how many replied, what content performed, and where the pipeline stands. No black box, no excuses.</div>
       </div>
     </div>
   </div>
@@ -490,13 +631,13 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-
   <!-- CTA -->
   <div class="section">
     <div class="cta-box">
-      <h2>Let's get <span>AIONX</span> in front of the right people.</h2>
-      <p>Book a 20-minute call on WhatsApp and we'll show you exactly who we'd target first, what messages we'd use, and what to expect in the first 30 days.</p>
-      <a href="https://wa.me/971552848110?text=Hi%2C%20I%27d%20like%20to%20book%20a%20meeting%20about%20the%20AIONX%20Growth%20proposal%20from%20ValGrow%20Labs" class="cta-btn">
+      <h2>Let's build <span>AIONX</span> together.</h2>
+      <p>Book a 20-minute call on WhatsApp. We'll confirm your Phase 1 scope, walk through the first 30 days, and get started.</p>
+      <a href="https://wa.me/971552848110?text=Hi%2C%20I%27d%20like%20to%20book%20a%20meeting%20about%20the%20revised%20AIONX%20Growth%20proposal%20from%20ValGrow%20Labs" class="cta-btn">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Book a Meeting on WhatsApp
       </a>
-      <div class="cta-sub">+971 55 284 8110 · ValGrow Labs, Dubai</div>
+      <div class="cta-sub">+971 55 284 8110 · ValGrow Labs · Dubai</div>
     </div>
   </div>
 
